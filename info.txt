@@ -1,0 +1,5 @@
+Learning Typescript
+I made this repo is just for practicing typescript
+
+Source of Learning : Udemy,
+URL : https://www.udemy.com/share/1000P4BEcdc11VRXo;
