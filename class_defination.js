@@ -1,25 +1,19 @@
-class Tree
-{
+var Tree = /** @class */ (function () {
     //-------------- Way 1--------------------
     // branch : string;
     // constructor(branch)
     // {
     //     this.branch = branch;
     // }
-
     //----------------- way 2--------------
-    constructor(private leaf:string)
-    {
+    function Tree(leaf) {
+        this.leaf = leaf;
         this.leaf = leaf;
     }
-
-    moveLeaf()
-    {
-        console.log(`${this.leaf} is moving to right`);
-    }
-}
-
-let tree1 = new Tree("Green Leaf");
+    Tree.prototype.moveLeaf = function () {
+        console.log("Leaf is moving");
+    };
+    return Tree;
+}());
+var tree1 = new Tree("Green Leaf");
 tree1.moveLeaf();
-
-//tree1.leaf = "Yellow Leave"; //Error because leaf is private
