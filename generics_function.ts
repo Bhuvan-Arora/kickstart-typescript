@@ -6,5 +6,5 @@ function displayData<TYPE>(data:TYPE)
     return data;
 }
 
-console.log(displayData(123));
+console.log(displayData<number>(123));
 // data in this will be number type further
