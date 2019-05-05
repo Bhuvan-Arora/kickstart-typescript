@@ -8,7 +8,8 @@ var myNameSpace;
     myNameSpace.displayData = displayData;
 })(myNameSpace || (myNameSpace = {}));
 ///<reference path="module1.ts" />
-console.log(myNameSpace.displayData());
+var thisSpace = myNameSpace.displayData;
+console.log(thisSpace);
 console.log(myNameSpace.userName);
 //If you simply compile this file into js typescript will not import namespace for you
 //To import namespace you have to compile the file with following command

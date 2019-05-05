@@ -1,6 +1,8 @@
 ///<reference path="module1.ts" />
 
-console.log(myNameSpace.displayData())
+import thisSpace = myNameSpace.displayData;
+
+console.log(thisSpace);
 console.log(myNameSpace.userName);
 
 //If you simply compile this file into js typescript will not import namespace for you
