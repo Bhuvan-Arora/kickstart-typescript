@@ -1,4 +1,5 @@
-class objectGenericClass<TYPE1, TYPE2>
+//we can extend the type with interface or any other data types known as generic constraints
+class objectGenericClass<TYPE1, TYPE2 extends string> // second type must be always string
 {
     constructor(public data1:TYPE1, public data2:TYPE2)
     {
@@ -6,7 +7,7 @@ class objectGenericClass<TYPE1, TYPE2>
     }
 }
 
-let object1 = new objectGenericClass<string, number>("abc", 123); //User can define the type here
+let object1 = new objectGenericClass<string, string>("abc", "dfd"); //User can define the type here
 let object2 = new objectGenericClass<boolean, string>(true, "rfc"); //User can define the type here
 
 let array1 : number[] = [1, 2, 3];
