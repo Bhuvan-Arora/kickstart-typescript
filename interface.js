@@ -12,6 +12,7 @@ function car1(automobile) {
     console.log("this " + automobile.brand + " is going at " + automobile.speed + " miles");
 }
 car1(automobile); //calling the function by passing automobile object
+//Implementing Interface on class
 var AutomobileClass = /** @class */ (function () {
     function AutomobileClass() {
     }
@@ -22,3 +23,11 @@ var AutomobileClass = /** @class */ (function () {
 }());
 var carObject = new AutomobileClass();
 carObject.speedMethod(1000);
+//Implementing interface to object
+var automobile2 = {
+    brand: "Mercedes",
+    speed: 200,
+    speedMethod: function () {
+        console.log("this " + this.brand + " is going at " + this.speed + " miles");
+    }
+};
